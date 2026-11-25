@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EC Electrical | 24/7 Electricians in London, N2</title>
+<meta name="description" content="Electrical services, residential and commercial in London, N2. 24/7 emergency electrical repairs, testing and inspections. Call 07460947840.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="Brand_assets/web/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{
+  colors:{spark:'#EDB41F',char:'#38373C',teal:'#09AEB8',slate:'#87868A',mist:'#121213'},
+  fontFamily:{head:['Montserrat','sans-serif'],body:['Poppins','sans-serif']}
+}}}
+</script>
+<style>
+:root{
+  --spark:#EDB41F;--char:#38373C;--teal:#09AEB8;--slate:#87868A;--mist:#121213;
+  --text:#B9B8BD;              /* slate, lightened for contrast on black */
+  --spring:cubic-bezier(.34,1.4,.64,1);
+  --lift:0 1px 2px rgba(56,55,60,.06),0 10px 24px -8px rgba(56,55,60,.14);
+  --float:0 2px 4px rgba(56,55,60,.12),0 18px 36px -12px rgba(56,55,60,.35),0 40px 70px -30px rgba(56,55,60,.4);
+  --noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{font-family:Poppins,sans-serif;font-size:16px;line-height:1.7;color:var(--text);background:#000;-webkit-font-smoothing:antialiased}
+.wrap{width:100%;max-width:1240px;margin-inline:auto;padding-inline:24px}
+.section{padding-block:72px}
+@media(min-width:1024px){.section{padding-block:112px}.wrap{padding-inline:40px}}
+.h2{font:400 28px/1.2 Montserrat,sans-serif;letter-spacing:-.03em;color:#fff}
+.h3{font:600 24px/1.25 Montserrat,sans-serif;letter-spacing:-.02em;color:#fff}
+.on-dark{color:#fff}
+@media(min-width:768px){.h2{font-size:32px}}
+
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:4px}
+.bg-spark :focus-visible{outline-color:#000}
+
+/* Buttons and links */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:4px;font:700 15px/1 Montserrat,sans-serif;text-transform:uppercase;letter-spacing:.02em;white-space:nowrap;position:relative;transition:transform .3s var(--spring)}
+.btn::after{content:"";position:absolute;inset:0;border-radius:inherit;background:#fff;opacity:0;transition:opacity .2s;pointer-events:none}
+.btn:hover{transform:translateY(-2px)}
+.btn:hover::after{opacity:.18}
+.btn:active{transform:translateY(1px) scale(.98)}
+.btn svg{width:19px;height:19px}
+.btn-y{background:var(--spark);color:#000}
+.btn-d{background:#000;color:#fff}
+.btn-o{border:2px solid #fff;color:#fff}
+.link{position:relative;font:600 15px/1 Montserrat,sans-serif;color:#fff;padding:12px 0}
+.link::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:3px;background:var(--spark);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--spring)}
+.link:hover::after,.link:focus-visible::after{transform:scaleX(1)}
+.link:active{opacity:.7}
+.tap{transition:opacity .2s}
+.tap:hover{opacity:.75}
+.tap:active{opacity:.55}
+.ico{flex:none;display:grid;place-items:center;width:52px;height:52px;border-radius:14px}
+.ico svg,.btn svg{fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.ico svg{width:24px;height:24px}
+
+/* Hero: the lights really switch on */
+.hero{position:relative;isolation:isolate;background:#000;color:#fff;overflow:hidden}
+.room{position:absolute;inset:0;z-index:-1}
+.room img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 45%}
+.room .dark{filter:brightness(.2) saturate(.45)}
+.room .lit{opacity:0;transition:opacity .5s ease-out}
+.hero[data-ceiling=on] .l-ceiling,.hero[data-pendant=on] .l-pendant,.hero[data-work=on] .l-work,.hero.all .l-all{opacity:1}
+.l-ceiling{-webkit-mask:linear-gradient(#000 18%,transparent 52%);mask:linear-gradient(#000 18%,transparent 52%)}
+.l-pendant{-webkit-mask:radial-gradient(34% 42% at 52% 46%,#000 25%,transparent);mask:radial-gradient(34% 42% at 52% 46%,#000 25%,transparent)}
+.l-work{-webkit-mask:linear-gradient(transparent 38%,#000 62%);mask:linear-gradient(transparent 38%,#000 62%)}
+.room .warm{position:absolute;inset:0;background:#FFE9AE;mix-blend-mode:multiply;opacity:.4}
+.room .tint{position:absolute;inset:0;background:var(--noise),linear-gradient(to top,rgba(0,0,0,.96),rgba(0,0,0,.6) 45%,rgba(0,0,0,.84))}
+@media(min-width:1024px){
+  .room img{left:auto;right:0;width:72%}
+  .room .tint{background:var(--noise),radial-gradient(60% 90% at 0 50%,rgba(0,0,0,.75),transparent),linear-gradient(90deg,#000 28.5%,rgba(0,0,0,.85) 40%,rgba(0,0,0,.12) 66%,transparent),linear-gradient(to top,rgba(0,0,0,.6),transparent 45%)}
+}
+.h1{font:700 clamp(38px,5vw,56px)/1.06 Montserrat,sans-serif;letter-spacing:-.03em;text-wrap:balance}
+
+/* Fuse board */
+.board{background:linear-gradient(#1b1b1d,#0c0c0d);border:1px solid rgba(255,255,255,.14);border-radius:14px;box-shadow:var(--float);color:#fff;padding:20px}
+.rail{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;background:#000;border-radius:8px;padding:10px;box-shadow:inset 0 2px 6px rgba(0,0,0,.35)}
+.brk{display:flex;flex-direction:column;align-items:center;gap:10px;background:var(--char);border-radius:6px;padding:12px 4px 10px;transition:transform .25s var(--spring)}
+.brk:hover{transform:translateY(-2px)}
+.brk:active{transform:scale(.97)}
+.brk.main{background:var(--spark);color:#000}
+.slot{display:block;position:relative;width:34px;height:56px;border-radius:6px;background:#0a0a0a;box-shadow:inset 0 2px 4px rgba(56,55,60,.25);overflow:hidden}
+.slot::before{content:"";position:absolute;inset:0;background:var(--teal);opacity:0;transition:opacity .2s}
+.brk[aria-checked=true] .slot::before{opacity:1}
+.lever{position:absolute;z-index:1;left:4px;right:4px;top:4px;height:24px;border-radius:4px;background:#e9e9ea;box-shadow:0 2px 4px rgba(0,0,0,.3);transform:translateY(24px);transition:transform .28s var(--spring)}
+.brk[aria-checked=true] .lever{transform:none}
+.lab{font:600 12px/1.2 Montserrat,sans-serif}
+
+/* Service cards */
+.card{background:#1d1d1f;border-radius:14px;overflow:hidden;box-shadow:var(--lift)}
+.pic{position:relative;overflow:hidden;background:var(--char)}
+.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pic::before,.pic::after{content:"";position:absolute;inset:0;z-index:1}
+.pic::before{background:#8d8a92;mix-blend-mode:multiply;opacity:.35}
+.pic::after{background:linear-gradient(to top,rgba(56,55,60,.5),transparent 60%)}
+.emerg{position:relative;display:flex;min-height:440px;background:#000;color:#fff}
+.emerg .pic{position:absolute;inset:0}
+.emerg .pic::before{background:#8d8a92;opacity:.45}
+.emerg .pic::after{background:linear-gradient(to top,#000 16%,rgba(0,0,0,.82) 48%,rgba(0,0,0,.12) 80%)}
+.ticks{display:grid;gap:8px 16px;font-size:15px}
+.ticks li{position:relative;padding-left:24px}
+.ticks li::before{content:"";position:absolute;left:0;top:.5em;width:10px;height:10px;border-radius:3px;background:var(--spark)}
+
+/* Form */
+.f label{display:block;font:600 14px/1.4 Montserrat,sans-serif;color:#fff;margin-bottom:6px}
+.f input,.f textarea{width:100%;border:2px solid #77767c;border-radius:6px;padding:13px 16px;font:400 16px/1.5 Poppins,sans-serif;color:#fff;background:#000;color-scheme:dark}
+.f input:hover,.f textarea:hover{border-color:var(--slate)}
+.f input:focus,.f textarea:focus{border-color:var(--teal);outline:2px solid rgba(9,174,184,.35);outline-offset:0}
+.grain{position:relative;isolation:isolate;background-image:radial-gradient(45% 120% at 100% 0,rgba(9,174,184,.13),transparent),radial-gradient(50% 120% at 0 100%,rgba(0,0,0,.3),transparent)}
+.grain::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--noise);opacity:.35}
+@media(max-width:359px){.wrap{padding-inline:16px}}
+@media(max-width:767px){footer{padding-bottom:76px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg class="hidden" aria-hidden="true">
+  <symbol id="phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.900.7 2.800a2 2 0 0 1-.5 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.4c.9.3 1.800.6 2.800.7a2 2 0 0 1 1.700 2z"/></symbol>
+  <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path d="M12 22s7-6.500 7-12a7 7 0 0 0-14 0c0 5.500 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="tool" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.900 7.900l-6.900 6.900a2.100 2.100 0 0 1-3-3l6.900-6.900a6 6 0 0 1 7.900-7.900z"/></symbol>
+</svg>
+
+<header class="bg-black sticky top-0 z-40" style="box-shadow:0 1px 0 rgba(255,255,255,.12)">
+  <div class="wrap flex items-center justify-between h-[84px] gap-2 sm:gap-6">
+    <a class="tap" href="#top" aria-label="EC Electrical home"><img src="Brand_assets/web/logo-dark.png" width="222" height="49" alt="EC Electrical, London, 24/7 electricians" class="w-[222px] max-w-none h-auto"></a>
+    <nav class="hidden md:flex items-center gap-8" aria-label="Main">
+      <a class="link hidden lg:block" href="#top">Home</a>
+      <a class="link" href="#services">Services</a>
+      <a class="link" href="#contact">Contact</a>
+      <a class="btn btn-y" href="tel:07460947840"><svg aria-hidden="true"><use href="#phone"/></svg>Call us now</a>
+    </nav>
+    <button id="menuBtn" class="ico bg-char text-white md:hidden hover:opacity-90 active:opacity-70" aria-expanded="false" aria-controls="menu" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></svg></button>
+  </div>
+  <nav id="menu" hidden class="md:hidden bg-black px-6 pb-5" aria-label="Mobile">
+    <div class="grid justify-start gap-2">
+      <a class="link" href="#top">Home</a><a class="link" href="#services">Services</a><a class="link" href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero" id="hero" data-ceiling="off" data-pendant="off" data-work="off">
+  <div class="room" aria-hidden="true">
+    <img class="dark" src="Brand_assets/web/kitchen.jpg" alt="">
+    <img class="lit l-ceiling" src="Brand_assets/web/kitchen.jpg" alt="">
+    <img class="lit l-pendant" src="Brand_assets/web/kitchen.jpg" alt="">
+    <img class="lit l-work" src="Brand_assets/web/kitchen.jpg" alt="">
+    <img class="lit l-all" src="Brand_assets/web/kitchen.jpg" alt="">
+    <div class="warm"></div><div class="tint"></div>
+  </div>
+  <div class="wrap grid gap-12 lg:grid-cols-[minmax(0,1fr)_400px] lg:items-end pt-16 pb-12 lg:pt-28 lg:pb-16 lg:min-h-[660px]">
+    <div class="max-w-[560px] lg:self-center">
+      <h1 class="h1">Lights out? Fuse gone? We’re on it, 24/7.</h1>
+      <p class="mt-6 text-[17px] lg:text-[18px] text-white/90 max-w-[46ch]">Electrical installations, inspection and testing in London, N2. Domestic and commercial insured electrician.</p>
+      <div class="mt-9 grid sm:flex gap-4">
+        <a class="btn btn-y" href="tel:07460947840"><svg aria-hidden="true"><use href="#phone"/></svg>Call us now</a>
+        <a class="btn btn-o" href="#contact">Get a quote</a>
+      </div>
+    </div>
+    <div class="board" role="group" aria-label="Interactive fuse board">
+      <p id="status" class="font-head font-semibold text-[16px] leading-snug mb-4" aria-live="polite">The power’s gone. Flip the main switch.</p>
+      <div class="rail">
+        <button class="brk main" role="switch" aria-checked="false" data-k="main"><span class="slot"><span class="lever"></span></span><span class="lab">Main</span></button>
+        <button class="brk" role="switch" aria-checked="false" data-k="ceiling"><span class="slot"><span class="lever"></span></span><span class="lab">Ceiling</span></button>
+        <button class="brk" role="switch" aria-checked="false" data-k="pendant"><span class="slot"><span class="lever"></span></span><span class="lab">Pendant</span></button>
+        <button class="brk" role="switch" aria-checked="false" data-k="work"><span class="slot"><span class="lever"></span></span><span class="lab">Kitchen</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-spark text-black" aria-label="Emergency repairs and maintenance">
+  <div class="wrap py-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+    <div class="grid lg:flex gap-5 lg:gap-12 font-head font-semibold text-[17px]">
+      <span class="flex items-center gap-4"><span class="ico bg-black text-spark"><svg aria-hidden="true"><use href="#clock"/></svg></span>Emergency electrical repairs</span>
+      <span class="flex items-center gap-4"><span class="ico bg-black text-spark"><svg aria-hidden="true"><use href="#tool"/></svg></span>Electrical maintenance</span>
+    </div>
+    <a class="btn btn-d !hidden md:!inline-flex" href="tel:07460947840">Call us now</a>
+  </div>
+</section>
+
+<section id="services" class="section bg-mist">
+  <div class="wrap">
+    <h2 class="h2">Our services</h2>
+    <div class="mt-10 grid gap-6 lg:grid-cols-[5fr_7fr]">
+      <article class="card emerg">
+        <div class="pic"><img src="Brand_assets/web/emergency.jpg" alt="Wiring and contactors inside an electrical panel" loading="lazy"></div>
+        <div class="relative z-10 self-end p-8 lg:p-10">
+          <span class="ico bg-spark text-char mb-6"><svg aria-hidden="true"><use href="#clock"/></svg></span>
+          <h3 class="h3 on-dark">Emergency repairs</h3>
+          <p class="mt-3 text-white/90">Emergency electrical repairs and maintenance, available 24/7 in London, N2.</p>
+          <a class="btn btn-y mt-7" href="tel:07460947840"><svg aria-hidden="true"><use href="#phone"/></svg>07460 947840</a>
+        </div>
+      </article>
+      <div class="grid gap-6">
+        <article class="card grid sm:grid-cols-[210px_1fr]">
+          <div class="pic h-52 sm:h-auto"><img style="object-position:60% 50%" src="Brand_assets/web/kitchen.jpg" alt="Bright modern kitchen with ceiling and pendant lighting" loading="lazy"></div>
+          <div class="p-7 sm:p-8">
+            <h3 class="h3">Electrical services</h3>
+            <p class="mt-2">All electrical services, at home or at work.</p>
+            <ul class="ticks mt-5 grid-flow-col grid-rows-[repeat(4,auto)] auto-cols-fr text-white/90"><li>Circuit upgrades</li><li>Circuit changes</li><li>Rewires</li><li>Fuses</li><li>Lights</li><li>Extractor fans</li><li>Sockets</li></ul>
+          </div>
+        </article>
+        <article class="card grid sm:grid-cols-[210px_1fr]">
+          <div class="pic h-52 sm:h-auto"><img style="object-position:72% 50%" src="Brand_assets/web/testing.jpg" alt="Electrician in hi-vis working on a control panel" loading="lazy"></div>
+          <div class="p-7 sm:p-8">
+            <h3 class="h3">Testing &amp; inspections</h3>
+            <p class="mt-2">All forms of testing, explained in plain English.</p>
+            <ul class="ticks mt-5 text-white/90"><li>Electrical reports</li><li>EICRs: a check of your fixed wiring</li><li>PAT testing: a check of plug-in appliances</li><li>Fire alarm and emergency light testing</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-char grain text-white">
+  <div class="wrap section grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
+    <div class="max-w-[560px]">
+      <h2 class="h2 on-dark">About EC Electrical</h2>
+      <p class="mt-5 text-white/90">At EC Electrical, we don’t just provide residential and commercial electrical services; we make people’s lives easier. Better.</p>
+    </div>
+    <div>
+      <p class="font-head font-semibold">Available 24/7 for emergency electrical repairs</p>
+      <a class="tap block font-head font-black text-spark leading-none mt-4 tracking-[-.03em] text-[40px] lg:text-[64px] whitespace-nowrap" href="tel:07460947840">07460 947840</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="wrap grid gap-12 lg:grid-cols-2 lg:gap-20">
+    <div class="flex flex-col">
+      <h2 class="h2">Get in touch</h2>
+      <p class="mt-3 max-w-[44ch]">Our work is guaranteed to satisfy. Call any time, or send us the details.</p>
+      <ul class="mt-8 lg:my-12 grid sm:grid-cols-3 gap-5 text-white font-head font-semibold text-[15px] leading-snug">
+        <li><a class="tap flex sm:block items-center gap-4" href="tel:07460947840"><span class="ico bg-char text-spark sm:mb-3"><svg aria-hidden="true"><use href="#phone"/></svg></span>07460 947840</a></li>
+        <li class="flex sm:block items-center gap-4"><span class="ico bg-spark text-char sm:mb-3"><svg aria-hidden="true"><use href="#clock"/></svg></span>Available 24/7</li>
+        <li class="flex sm:block items-center gap-4"><span class="ico bg-teal text-white sm:mb-3"><svg aria-hidden="true"><use href="#pin"/></svg></span>London, N2</li>
+      </ul>
+      <a class="tap mt-8 lg:mt-auto block aspect-[11/6] relative rounded-[14px] overflow-hidden" style="box-shadow:var(--lift)" href="https://www.google.com/maps/search/?api=1&amp;query=London+N2" target="_blank" rel="noopener" aria-label="Open London N2 in Google Maps"><img class="absolute inset-0 w-full h-full object-cover" style="filter:invert(.92) hue-rotate(180deg)" src="Brand_assets/web/map.png" alt="Map of London N2, around Finchley and Muswell Hill" loading="lazy"></a>
+    </div>
+    <div class="bg-[#1d1d1f] rounded-[14px] p-7 sm:p-10">
+      <h2 class="h2">Get a free quote</h2>
+      <p class="mt-3">To request a service call, please fill out the form below.</p>
+      <form id="quote" class="f grid gap-5 mt-7">
+        <div><label for="n">Full name</label><input id="n" name="name" autocomplete="name"></div>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div><label for="e">Email (required)</label><input id="e" name="email" type="email" autocomplete="email" required></div>
+          <div><label for="p">Phone (required)</label><input id="p" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div><label for="m">Your message</label><textarea id="m" name="message" rows="4"></textarea></div>
+        <button class="btn btn-y w-full" type="submit">Send</button>
+        <p id="formMsg" class="text-white text-[15px]" role="status" hidden></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="bg-mist text-white/80">
+  <div class="wrap py-10 lg:py-12 flex flex-col md:flex-row md:items-center justify-between gap-8">
+    <img src="Brand_assets/web/logo-dark.png" width="260" height="58" class="w-[260px] h-auto" alt="EC Electrical, London, 24/7 electricians">
+    <nav class="flex gap-8" aria-label="Footer"><a class="link !text-white" href="#top">Home</a><a class="link !text-white" href="#services">Services</a><a class="link !text-white" href="#contact">Contact</a></nav>
+  </div>
+  <div class="wrap"><div class="border-t border-white/15 py-6 text-[14px]">© <span id="yr">2026</span> EC Electrical. All rights reserved.</div></div>
+</footer>
+
+<div class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-black p-3 grid grid-cols-2 gap-3" style="box-shadow:0 -1px 0 rgba(255,255,255,.14)">
+  <a class="btn btn-y !px-1" href="tel:07460947840"><svg aria-hidden="true"><use href="#phone"/></svg>Call now</a>
+  <a class="btn btn-o !px-2" href="#contact">Get a quote</a>
+</div>
+
+<script>
+// Menu
+const mb=document.getElementById('menuBtn'),menu=document.getElementById('menu');
+const setMenu=o=>{menu.hidden=!o;mb.setAttribute('aria-expanded',o)};
+mb.onclick=()=>setMenu(menu.hidden);
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>setMenu(false));
+
+addEventListener('keydown',e=>{if(e.key==='Escape'&&!menu.hidden){setMenu(false);mb.focus()}});
+
+// Fuse board
+const hero=document.getElementById('hero'),st=document.getElementById('status'),zones=['ceiling','pendant','work'];
+const b=Object.fromEntries([...document.querySelectorAll('.brk')].map(x=>[x.dataset.k,x]));
+const isOn=k=>b[k].getAttribute('aria-checked')==='true';
+let timers=[];
+function set(k,v){
+  b[k].setAttribute('aria-checked',v);
+  const main=isOn('main');
+  zones.forEach(z=>hero.dataset[z]=main&&isOn(z)?'on':'off');
+  const n=zones.filter(z=>hero.dataset[z]==='on').length;
+  hero.classList.toggle('all',n===3);
+  st.textContent=n===3?'Power’s back on. That’s what we do.':!main?'The power’s gone. Flip the main switch.':n?'Still some lights out. Try the other switches.':'Main’s on. Now switch on the lights.';
+}
+const stop=()=>{timers.forEach(clearTimeout);timers=[]};
+function powerUp(){set('main',true);zones.forEach((z,i)=>timers.push(setTimeout(()=>set(z,true),350*(i+1))))}
+for(const k in b)b[k].onclick=()=>{
+  stop();const v=!isOn(k);
+  if(k!=='main')set(k,v);
+  else if(v)powerUp();
+  else[...zones,'main'].forEach(z=>set(z,false));
+};
+if(matchMedia('(prefers-reduced-motion:reduce)').matches)['main',...zones].forEach(k=>set(k,true));
+else timers.push(setTimeout(powerUp,1400));
+
+// Quote form. Set FORM_ENDPOINT to your form webhook URL to receive enquiries online.
+// While it is empty, Send opens a ready-written text message to the business number.
+const FORM_ENDPOINT='';
+const form=document.getElementById('quote'),msg=document.getElementById('formMsg');
+form.onsubmit=async ev=>{
+  ev.preventDefault();
+  const d=Object.fromEntries(new FormData(form));
+  const show=t=>{msg.textContent=t;msg.hidden=false};
+  if(FORM_ENDPOINT){
+    try{
+      const r=await fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});
+      if(!r.ok)throw 0;
+      form.reset();show('Sent. We’ll get back to you shortly.');
+    }catch{show('Your message didn’t send. Please call 07460 947840.')}
+  }else{
+    const t=`Quote request\nName: ${d.name}\nEmail: ${d.email}\nPhone: ${d.phone}\n${d.message}`;
+    show('Your text message is ready: press send in your messages app. If nothing opened, call 07460 947840.');
+    location.href='sms:07460947840?&body='+encodeURIComponent(t);
+  }
+};
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

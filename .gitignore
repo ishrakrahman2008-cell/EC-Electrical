@@ -1,0 +1,8 @@
+# Publish only the EC Electrical site; other projects in this folder stay local
+/*
+!/.gitignore
+!/index.html
+!/Brand_assets/
+/Brand_assets/*
+!/Brand_assets/web/
+.DS_Store
